@@ -1,0 +1,161 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap');
+
+html {
+    margin:0;
+    padding: 0;
+    height: 100vh;
+}
+body {
+    padding:0;
+    margin:0;
+    font-size: 15px;
+    font-family: 'Poppins', sans-serif;
+    display:flex;
+    flex-direction:column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: hsl(0, 0%, 98%);
+    overflow-y: hidden;
+}
+
+header {
+    width:32%;
+    text-align: center;
+    /* margin-top: 30px; */
+}
+
+h1 {
+    font-weight: 100;
+    padding: 0;
+    margin:0;
+}
+
+span {
+    font-weight: 600;
+}
+
+header > p {
+    font-weight: 100;
+    font-size: .9em
+}
+
+main {
+    padding-top: 40px;
+    display:flex;
+    gap: 20px;
+}
+
+main > div {
+    align-self:center;
+}
+
+.middle {
+    display:flex;
+    flex-direction:column;
+    gap: 20px;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    box-shadow: 0 10px 25px -10px hsl(229, 6%, 66%);
+    border-radius: .5em;
+    padding: 30px;
+}
+
+.card > p {
+    font-weight: 200;
+    font-size: 1em;
+    color: hsl(234, 12%, 34%);
+}
+
+.card >img {
+    align-self: flex-end;
+    margin-top: 1em;
+}
+
+.supervisor {
+    border-top: 4px solid hsl(180, 62%, 55%);
+}
+
+.team-builder {
+    border-top: 4px solid hsl(0, 78%, 62%);
+}
+
+.karma {
+    border-top: 4px solid hsl(34, 97%, 64%);
+}
+
+.calculator {
+    border-top: 4px solid hsl(212, 86%, 64%);
+}
+
+.card > h2 {
+    margin:0;
+}
+
+footer {
+    position: absolute;
+    bottom: 5px;
+}
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+
+@media screen and (max-width: 1150px){
+    html {
+        overflow-x: hidden;
+        width: unset;
+    }
+    body {
+        font-size: 12px;
+        overflow-y: visible;
+    }
+
+    main {
+        flex-direction: column;
+        padding: 0;
+        margin-bottom: 50px;
+    }
+
+    .card {
+        width: 250px;
+        padding: 25px;
+    }
+
+    header {
+        margin : 0;
+        width: 85%;
+        margin-bottom: 50px;
+        margin-top: 50px;
+    }
+
+    header > p{
+        font-size: 1.2em;
+    }
+
+    footer {
+        display: none;
+    }
+
+    body {
+        padding: 10px;
+        height: unset
+    }
+
+    .card > img {
+        width: 20%;
+    }
+
+    .card > p {
+        margin-top: 5px;
+    }
+}
